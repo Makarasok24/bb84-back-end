@@ -20,8 +20,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000```
 
 
 ## Project Structure
-```
-├── bb84-backend/
+```├── bb84-backend/
 │   ├── main.py              # FastAPI application
 │   ├── requirements.txt     # Python dependencies
 │   └── Dockerfile          # Backend container

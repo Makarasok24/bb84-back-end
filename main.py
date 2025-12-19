@@ -9,7 +9,12 @@ app = FastAPI(title="BB84 Quantum Key Distribution API")
 # CORS middleware for Next.js frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "https://bb84-front-end.vercel.app",
+        "https://bb84-front-end.vercel.app/",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
